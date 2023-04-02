@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;600&family=Overpass:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Orange: #fb7413;
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: #7c8798;
+  --Dark-Blue: #21262c;
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+p {
+  font-size: 15px;
+  color: var(--Medium-Grey);
+}
+h1 {
+  color: var(--White);
+  font-weight: 600;
+}
+body {
+  background: var(--Very-Dark-Blue);
+  font-family: "Overpass";
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+.star {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100px;
+  display: grid;
+  place-items: center;
+  background: hsl(214, 20%, 23%);
+  margin-bottom: 1rem;
+}
+.rating-section {
+  padding: 1.5rem;
+  border-radius: 20px;
+  background: hsl(213, 15%, 13%);
+}
+.how-did-we-do {
+  margin-bottom: 1rem;
+}
+.rating-section-text {
+  max-width: 21rem;
+  line-height: 1.35rem;
+  margin-bottom: 1.5rem;
+}
+.numbers {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+.number-btn {
+  background: hsl(214, 20%, 23%);
+  font-family: "Overpass";
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+  cursor: pointer;
+  border: none;
+  color: var(--Medium-Grey);
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  transition: all 0.3s linear;
+}
+/* .number-btn:hover {
+  background: var(--Medium-Grey);
+  color: var(--White);
+} */
+.hover:hover {
+  background: var(--Medium-Grey);
+  color: var(--White);
+}
+.submit-btn {
+  background: var(--Orange);
+  border: none;
+  border-radius: 20px;
+  padding: 0.75rem 0rem;
+  width: 345px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.submit-btn:hover {
+  background: var(--White);
+}
+.submit-btn:hover p {
+  color: var(--Orange);
+  font-weight: 600;
+}
+.submit-btn p {
+  color: var(--White);
+  text-transform: uppercase;
+  font-family: "Overpass";
+  height: 0.9rem;
+  letter-spacing: 0.1rem;
+  transition: all 0.3s linear;
+}
+.submit-btn-div {
+  display: flex;
+  justify-content: center;
+}
+/**/
+.thank-you-section {
+  padding: 1.5rem;
+  border-radius: 20px;
+  width: 384px;
+  height: 357px;
+  background: hsl(213, 15%, 13%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.thank-you-svg {
+  margin-bottom: 1rem;
+  margin-top: 0.75rem;
+}
+.you-selected-section {
+  background: hsl(214, 20%, 20%);
+  padding: 0.5rem 0.75rem;
+  border-radius: 20px;
+}
+.you-selected-section p {
+  color: var(--Orange);
+  height: 1rem;
+}
+.thank-you-section h1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.thank-you-section p {
+  text-align: center;
+}
+.none {
+  display: none;
+}
+.click {
+  background-color: var(--Orange);
+  color: var(--White);
+}
+@media screen and (max-width: 420px) {
+  .rating-section {
+    width: 90vw;
+    margin: auto;
+  }
+  .rating-section-text {
+    max-width: max-content;
+  }
+  .numbers {
+    gap: 1rem;
+  }
+  .number-btn {
+    width: 2.3rem;
+    height: 2.3rem;
+  }
+  .number-btn p {
+    padding: 0rem 0rem;
+  }
+  .thank-you-section {
+    width: 90vw;
+  }
+}
